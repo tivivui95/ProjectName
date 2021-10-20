@@ -17,6 +17,8 @@ import io.invertase.notifee.NotifeePackage;
 import io.invertase.firebase.app.ReactNativeFirebaseAppPackage;
 // @react-native-firebase/messaging
 import io.invertase.firebase.messaging.ReactNativeFirebaseMessagingPackage;
+// react-native-push-notification
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 
 public class PackageList {
   private Application application;
@@ -64,7 +66,8 @@ public class PackageList {
       new MainReactPackage(mConfig),
       new NotifeePackage(),
       new ReactNativeFirebaseAppPackage(),
-      new ReactNativeFirebaseMessagingPackage()
+      new ReactNativeFirebaseMessagingPackage(),
+      new ReactNativePushNotificationPackage()
     ));
   }
 }
